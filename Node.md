@@ -1,0 +1,1 @@
+# Chạy scss: scss --watch scss/main.scss:css/main.scss
