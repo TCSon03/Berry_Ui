@@ -1,6 +1,146 @@
-header h1 {
-  font-size: 90px;
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+.bg-header-line {
+  background-color: #3D4750;
+}
+
+.header-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-family: "Poppins", sans-serif;
+}
+.header-line p {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+}
+.header-line ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+.header-line ul a {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  transition: color 0.5s ease-in-out;
+}
+.header-line ul a:hover {
+  color: #4ed6b8;
+}
+
+.bg-header-main {
+  background-color: #f8f8fb;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 0;
+}
+
+.header_logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.header_logo p:nth-last-of-type(2) {
+  font-size: 12px;
+  color: #ff954d;
+  font-weight: 500;
+}
+.header_logo p:nth-last-of-type(1) {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+.header_search {
+  background-color: #fff;
+  border: 1px solid #eeeeee;
+  padding: 20px 13.5px;
+  border-radius: 15px;
+  display: flex;
+  gap: 24px;
+  width: 40%;
+}
+.header_search select {
+  border: none;
+  background: none;
+  font-size: 14px;
+  color: #777;
+}
+.header_search .search_items {
+  width: 100%;
+  display: flex;
+}
+.header_search .search_items input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #777;
+  width: 100%;
+}
+.header_search .search_items button {
+  border: none;
+  background: none;
+  font-size: 20px;
+}
+.header_search .search_items button i {
+  display: flex;
+  align-items: center;
+}
+
+.header_icon {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header_icon .icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.text_icon p {
+  font-size: 14px;
+  color: #3D4750;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+.text_icon p span {
+  margin-right: 4px;
+  font-weight: 700;
+}
+.text_icon p:hover {
+  color: #d0e7ff;
+}
+.text_icon .text_icon_main {
+  font-size: 16px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=main.css.map */

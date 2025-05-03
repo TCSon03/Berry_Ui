@@ -1,6 +1,122 @@
-header {
-  h1 {
-    font-size: 90px;
-    color: red;
+@use "../abstracts/variables" as var;
+
+.bg-header-line {
+  background-color: var.$color-text-main;
+}
+.header-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-family: var.$font-poppins;
+  p {
+    font-size: 14px;
+    color: var.$color-text-while;
+    font-weight: 300;
+    // letter-spacing: 0.48px;
+  }
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    a {
+      font-size: 14px;
+      color: var.$color-text-while;
+      font-weight: 300;
+      transition: color 0.5s ease-in-out;
+      &:hover {
+        color: #4ed6b8;
+      }
+    }
+  }
+}
+
+.bg-header-main {
+  background-color: #f8f8fb;
+}
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var.$font-poppins;
+  padding: 10px 0;
+}
+.header_logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  p:nth-last-of-type(2) {
+    font-size: 12px;
+    color: #ff954d;
+    font-weight: 500;
+  }
+  p:nth-last-of-type(1) {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+  }
+}
+.header_search {
+  background-color: #fff;
+  border: 1px solid #eeeeee;
+  padding: 20px 13.5px;
+  border-radius: 15px;
+  display: flex;
+  gap: 24px;
+  width: 40%;
+  select {
+    border: none;
+    background: none;
+    font-size: 14px;
+    color: #777;
+  }
+  .search_items {
+    width: 100%;
+    display: flex;
+    input {
+      border: none;
+      outline: none;
+      font-size: 14px;
+      color: #777;
+      width: 100%;
+    }
+    button {
+      border: none;
+      background: none;
+      font-size: 20px;
+      i {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+.header_icon {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  .icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.text_icon {
+  p {
+    font-size: 14px;
+    color: var.$color-text-main;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+    span {
+      margin-right: 4px;
+      font-weight: 700;
+    }
+    &:hover {
+      color: #d0e7ff;
+    }
+  }
+  .text_icon_main {
+    font-size: 16px;
+    font-weight: 600;
   }
 }
