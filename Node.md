@@ -1,1 +1,1 @@
-# Chạy scss: scss --watch scss/main.scss:css/main.scss
+# Chạy scss: sass --watch scss/main.scss:css/main.css
