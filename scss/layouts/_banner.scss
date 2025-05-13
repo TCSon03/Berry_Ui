@@ -1,0 +1,91 @@
+.bg-banner-main {
+  background: linear-gradient(
+    99deg,
+    rgba(234, 234, 234, 0.15) 2.29%,
+    rgba(216, 202, 179, 0.01) 102.4%
+  );
+  padding: 50px 0;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner_title {
+  p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  .banner_title_item {
+    position: relative;
+    img {
+      position: absolute;
+      top: -30px;
+      right: -30px;
+    }
+  }
+  h2 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #3d4750;
+    margin-bottom: 20px;
+    span {
+      color: #eda957;
+    }
+  }
+  button {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #03045e;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+    background: none;
+  }
+
+  button::before,
+  button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  button::before {
+    left: -4px;
+    background: #240046;
+  }
+
+  button::after {
+    right: -4px;
+    background: #5a189a;
+  }
+
+  button:hover::before,
+  button:hover::after {
+    width: 58%;
+  }
+
+  button:hover span {
+    color: #e0aaff;
+    transition: 0.3s;
+  }
+
+  button span {
+    color: #3d4750;
+    font-size: 14px;
+    transition: all 0.3s ease-in;
+  }
+}
+
